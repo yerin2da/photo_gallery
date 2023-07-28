@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*gallery.css*/
+body{
+    font-family: "막은 고딕",arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+h2,p{padding: 15px;}
+main{margin-top: 50px;}
+.gallery{
+    border: 1px solid #f0f;
+    width: 1200px;
+    margin: 0 auto;
+}
+.gallery h2{
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+/*갤러리 메뉴 서식*/
+.g_nav{
+    height:50px;
+    border-bottom: 3px solid #000;
+}
+
+.g_nav ul{
+    display: flex;
+    justify-content: center;
+}
+.g_nav ul li{
+    margin: 0px 10px;
+}
+.g_nav ul li a{
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    padding: 4px 14px 5px 14px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.act{
+    background: #cf068c !important;
+}
+/*갤러리 이미지 서식*/
+.g_list{
+    display: flex;
+    flex-wrap: wrap;/*가로너비를 넘쳐난 자식요소를 다음 줄로 내리기*/
+}
+.g_list>li{
+    width: 25%;height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+.g_list>li>a{}
+.g_list>li:first-child img{
+    transform: scale(1.19);
+}
+.g_list>li>a img{width: 100%;}
+.caption{
+    width: 100%;
+    position: absolute;
+    bottom: -40px;left: 0px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    text-indent: 10px;
+    line-height: 40px;
+}
+
+/*모달서식*/
+.modal{
+    position: fixed;
+    top: 0px;left: 0px;
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.modal div{
+    max-width: 600px;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal div img{width: 100%;}
+.modal i.fa-times{
+    font-size: 30px;
+    position: absolute;
+    top: -30px !important;
+    right: -50px;
+    color: #Fff;
+    padding: 10px;
+}
+.modal h3{color: #Fff; text-align: center;font-size: 30px; padding-bottom: 10px;}
+.modal .page{
+    color: #Fff;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.modal i.fas{
+    color: #Fff;
+    font-size: 30px;
+    position: absolute;
+    padding: 10px;
+    top:42%;
+}
+i.fa-angle-left{left: 0;}
+i.fa-angle-right{right: 0;}
+
+.page{padding-left: 300px;}
